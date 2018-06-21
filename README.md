@@ -1,23 +1,12 @@
 # README
-
-## Objective
-* Perform full CRUD for 1 resource
-* Understand Form Helpers
-
-### Already Completed
-* rails new brew-crew
-* rails g model Brew blend_name origin notes strength:integer
-* added 'faker' gem to Gemfile
-* created seed data
+This is an application for tracking brews and customers. A brew can be purchased by many customers and a customer can purchase many brews.
 
 
 ##### Deliverables
-* route for '/brews' that displays all of your coffees as links to their show pages
-* route to create a new brew
-* route to edit a brew
-* route to delete a brew
-* route to '/brews/strongest' find the brews with the highest strength
-
-#### Bonus
-* strength should only be from 1-5 
-
+***** Create association between brews and customers.
+* Create route to a form to purchase a brew. This form should include:
+  - takes in a Customer's name (either new or existing) who is making the purchase
+  - takes in purchase information (size, strength)
+  - allows the customer to select a pre-existing brew of their choice
+  - redirects to the customer's show page
+* Customer show page should show all brew's purchased.

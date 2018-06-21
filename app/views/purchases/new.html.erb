@@ -1,0 +1,17 @@
+<!-- * Create route to a form to purchase a brew. This form should include:
+  - takes in a Customer's name (either new or existing) who is making the purchase
+  - takes in purchase information (size, strength)
+  - allows the customer to select a pre-existing brew of their choice
+  - redirects to the customer's show page -->
+<%= form_for @purchase do |f| %>
+  <%= f.label :brew_id %>
+  <%= f.collection_select(:brew_id, @brews, :id, :blend_name) %><br/>
+  <%= f.label :customer  %>
+  <%= f.text_field :customer %><br/>
+  <%= f.label :size  %>
+  <%= f.text_field :size %><br/>
+  <%= f.label :strength  %>
+  <%= f.text_field :strength %><br/>
+  <%= f.submit %>
+
+<% end %>

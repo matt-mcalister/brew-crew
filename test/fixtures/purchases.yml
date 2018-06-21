@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  size: MyString
+  strength: MyString
+  customer: one
+  brew: one
+
+two:
+  size: MyString
+  strength: MyString
+  customer: two
+  brew: two
